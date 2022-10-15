@@ -13,12 +13,12 @@ const { NotImplementedError } = require('../extensions/index.js');
  */
 function getCommonCharacterCount(s1, s2 ) {
   let arr1 = s1.split('')
-  arr1 = new Set(arr1)
+  //arr1 = new Set(arr1)
   let arr2 = s2.split('')
- arr2 = new Set(arr2)
+ //arr2 = new Set(arr2)
  var count = arr1.filter(x => arr2.indexOf(x) !== -1)
     
-  return count.length
+  return +count.length
 }
 
 module.exports = {
